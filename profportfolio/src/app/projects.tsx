@@ -1,9 +1,10 @@
 // 'use client'
 import React, { useEffect } from 'react'
-import { Carousel, initTE } from "tw-elements"
+// import { Carousel, initTE } from "tw-elements"
+// import NewCarousel from './carousel.tsx'
 // import projData from '../../public/assets/json/projects.json';
-import carouselItem from "./carouselItem";
-import Project from '../../public/assets/objects/proj.tsx'
+// import carouselItem from "./carouselItem";
+import Project from '../../public/assets/objects/proj'
 
 export default function Projects(projData: Project[]) {
   // useEffect(() => {
@@ -13,14 +14,14 @@ export default function Projects(projData: Project[]) {
     // };
     // init();
     // initTE(Carousel)
-  // }, []);
+    // }, []);
+    // { let success = projData.forEach((proj: Project) => {
+      // {carouselItem(proj)}
+    // })}
   return (
     <>
-    <Carousel>
-      { projData.forEach((proj: Project) => {
-        {carouselItem(proj)}
-      })}
-    </Carousel>
+    {/* {NewCarousel({Carousel,success})} */}
+    {/* </NewCarousel> */}
     </>
   );
 };

@@ -1,33 +1,22 @@
-'use client'
-import { initTE, Carousel } from 'tw-elements';
-import Projects from "./projects";
-import { AppProps } from 'next/app';
-import { useEffect } from 'react';
-import projData from '../../public/assets/json/projects.json'
-
-// export default function Mid() {
-//   useEffect(() => {
-//     const use = async() => {
-//       (await import('tw-elements')).default;
-//     };
-//     use();
-//   }, []);
-//   return(
-//     <>
-//       {Projects()}
-//     </>
-//   )
+// import * as React from 'react';
+// import { ButtonGroupProps, ArrowProps, DotProps } from 'react-multi-carousel/lib/types';
+// interface CustomLeftArrowProps extends ArrowProps {
+//   myOwnStuff: string;
 // }
-
-export default function Mid() {
-  useEffect(() => {
-    const use = async () => {
-      (await import('tw-elements')).default;
-    };
-    use();
-  }, []);
-  return (
-    <>
-       {Projects(projData.projects)}
-     </>
-)}
+// interface CarouselButtonGroupProps extends ButtonGroupProps {
+//   className?: string;
+// }
+// const CustomLeftArrow = ({ onClick }:CustomLeftArrowProps) => {
+//   return <div onClick={() => onClick()}>This is My custom arrow</div>
+// }
+// const CarouselButtonGroup = ({ next, previous }:CarouselButtonGroupProps) => {
+//   return (
+//     <div>
+//       <button onClick={() => previous()} />
+//       <button onClick={() => next()} />
+//     </div>
+//   );
+// };
+// const CustomDots = ({ index, active, onClick, carouselState }:DotProps) => {
+//   return <div onClick={() => onClick }>This is a Custom dots</div>
+// }

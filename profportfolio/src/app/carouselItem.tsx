@@ -1,9 +1,10 @@
+// 'use client'
 import Image from 'next/image'
-import projData from '../../public/assets/json/projects.json';
-import Project from '../../public/assets/objects/proj.tsx'
+import React from 'react';
+// import Project from '../../public/assets/objects/proj.tsx'
 
 
-export default function carouselItem(proj: Project) {
+export default function carouselItem(proj: any) {
   return(
     <Image
     src={proj.imgs[0]}
